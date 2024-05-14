@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  padding: 20px;
+}
+
+h3 {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+p {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 100;
+  opacity: 0.6;
+}
+
+article {
+  display: flex;
+  gap: 5rem;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  padding: 4rem 7rem;
+}
+article > div {
+  padding-right: 7rem;
+}
+article > div:not(:last-child) {
+  border-right: 2px solid rgba(107, 107, 108, 0.4);
+}
+article .img-wrapper {
+  width: 90px;
+  height: 90px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: rgba(107, 107, 108, 0.4);
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 855px) {
+  article {
+    flex-direction: column;
+    box-shadow: none;
+    gap: 3rem;
+  }
+  article > div {
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    padding: 2rem 4rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  article > div:not(:last-child) {
+    border: none;
+  }
+  .img-wrapper {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  article {
+    gap: 0;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.15);
+    padding-inline: 2rem;
+    padding-block: 0;
+    padding-bottom: 2rem;
+  }
+  article > div {
+    box-shadow: none;
+    display: block;
+    gap: 0;
+    padding: 0;
+  }
+  .img-wrapper {
+    margin-top: 2rem;
+  }
+}
+.container {
+  margin-top: 5rem;
+  background-image: url(./images/truck.jpg);
+  background-position-y: center;
+  background-size: cover;
+  height: 400px;
+}
+.container .content {
+  display: flex;
+  background: linear-gradient(55deg, #008080, #008080 800px, transparent 800px, transparent);
+  height: 100%;
+}
+.container .content p {
+  max-width: 50rem;
+  display: flex;
+  margin-left: 100px;
+  text-align: center;
+  align-items: center;
+  font-size: 6.4rem;
+  font-weight: 500;
+  color: #fff;
+  opacity: 1;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
